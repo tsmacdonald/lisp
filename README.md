@@ -30,8 +30,8 @@ lisp_eval("(+ 1 (* 2 3))").should == 7
 Evaluate conditionals:
 
 ```
-lisp_eval("(if #t then 1 else 2)").should == 1
-lisp_eval("(if #f then #t else #f)").should == false
+lisp_eval("(if #t 1 2)").should == 1
+lisp_eval("(if #f #t #f)").should == false
 ```
 
 

@@ -31,8 +31,8 @@ describe '#lisp_eval' do
 
   describe "CHALLENGE 4", pending: true  do
     it "lisp_evaluates conditionals" do
-      lisp_eval("(if #t then 1 else 2)").should == 1
-      lisp_eval("(if #f then #t else #f)").should == false
+      lisp_eval("(if #t 1 2)").should == 1
+      lisp_eval("(if #f #t #f)").should == false
     end
   end
 
